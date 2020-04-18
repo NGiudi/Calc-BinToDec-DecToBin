@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Convertidor Bases</title>
+	<link rel="stylesheet" href="estilos.css">
+
+	<!-- Dependencias FontAwesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+	<div class="container">
+		<input type="text" id="display" placeholder="0" disabled>
+		<div id="num-ant"></div>
+		
+		<div class="row">
+			<div id="BTD" class="btn bg-black" onclick="btnBTD()">BinToDec</div>
+			<div id="DTB" class="btn bg-orange" onclick="btnDTB()">DecToBin</div>
+			<div class="btn bg-black" onclick="elimNumber()">
+				<i class="fas fa-backspace"></i>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="btn bg-black" onclick="printNumber('7')">7</div>
+			<div class="btn bg-black" onclick="printNumber('8')">8</div>
+			<div class="btn bg-black" onclick="printNumber('9')">9</div>
+		</div>
+
+		<div class="row">
+			<div class="btn bg-black" onclick="printNumber('4')">4</div>
+			<div class="btn bg-black" onclick="printNumber('5')">5</div>
+			<div class="btn bg-black" onclick="printNumber('6')">6</div
+		</div>
+
+		<div class="row">
+			<div class="btn bg-black" onclick="printNumber('1')">1</div>
+			<div class="btn bg-black" onclick="printNumber('2')">2</div>
+			<div class="btn bg-black" onclick="printNumber('3')">3</div>
+		</div>
+
+		<div class="row">
+			<div class="btn bg-black" onclick="printNumber('.')">.</div>
+			<div class="btn bg-black" onclick="printNumber('0')">0</div>
+			<div class="btn bg-black" onclick="result()">=</div>
+		</div>
+	</div>
+	<script src="funciones.js"></script>
+</body>
+
+</html>
